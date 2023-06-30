@@ -38,7 +38,7 @@ export default class Form extends Component {
     this.formElement = null;
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const nextState = this.getStateFromProps(nextProps);
     this.setState(nextState);
     if (
