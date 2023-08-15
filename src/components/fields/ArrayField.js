@@ -2,7 +2,7 @@ import AddButton from "../AddButton";
 import IconButton from "../IconButton";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import includes from "core-js/library/fn/array/includes";
+import includes from "core-js/features/array/includes";
 import {View } from 'react-native'
 
 import UnsupportedField from "./UnsupportedField";

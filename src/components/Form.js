@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import {View,Button,Text,TouchableOpacity,StyleSheet} from "react-native"
+import {Text} from "@ui-kitten/components"
+import { StyleSheet,TouchableOpacity,View } from "react-native";
 import PropTypes from "prop-types";
 import { default as DefaultErrorList } from "./ErrorList";
 import {
@@ -260,7 +261,7 @@ export default class Form extends Component {
             activeOpacity={0.85}
             onPress={(formData) => this.onSubmit(formData)}
           >
-              <Text style={[styles.buttonText,getStyle(styleSheet,'buttonText','Form')]}>{submitTitle}</Text>
+              <Text style={[styles.buttonText,getStyle(styleSheet,'buttonText','Form')]}>Submit</Text>
           </TouchableOpacity>
         )}
       </View>
